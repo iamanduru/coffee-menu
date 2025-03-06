@@ -3,58 +3,132 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link href="style.css" rel="stylesheet"/>
+    <title>Artisan Cafe Menu</title>
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
+    <div class="container">
+      <header>
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <img src="/api/placeholder/80/80" alt="Café Logo" class="logo">
+        <h1>ARTISAN CAFÉ</h1>
+        <p class="established">Established 2020</p>
+      </header>
+      
+      <div class="menu__container">
+        <div class="menu__section">
+          <div class="section__title">
+            <i class="fas fa-coffee"></i>
+            <h2>COFFEE SELECTIONS</h2>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">French Vanilla</p>
+              <p class="item__description">Smooth and creamy vanilla-infused coffee, made with our house blend.</p>
+            </div>
+            <p class="item__price">$3.00</p>
+          </div>
+          
+          <div class="menu__item special">
+            <div class="item__details">
+              <p class="item__name">Caramel Macchiato</p>
+              <p class="item__description">Espresso with steamed milk, topped with a velvety caramel drizzle.</p>
+            </div>
+            <p class="item__price">$3.75</p>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">Pumpkin Spice</p>
+              <p class="item__description">Seasonal favorite with cinnamon, nutmeg, and real pumpkin flavors.</p>
+            </div>
+            <p class="item__price">$3.50</p>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">Hazelnut</p>
+              <p class="item__description">Rich hazelnut-infused coffee with a nutty aroma and smooth finish.</p>
+            </div>
+            <p class="item__price">$4.00</p>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">Mocha</p>
+              <p class="item__description">Perfect blend of espresso, steamed milk, and luxurious chocolate.</p>
+            </div>
+            <p class="item__price">$4.50</p>
+          </div>
+        </div>
+        
+        <div class="menu__section">
+          <div class="section__title">
+            <i class="fas fa-birthday-cake"></i>
+            <h2>DESSERT SPECIALTIES</h2>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">Artisan Donut</p>
+              <p class="item__description">Freshly baked and glazed to perfection each morning.</p>
+            </div>
+            <p class="item__price">$1.50</p>
+          </div>
+          
+          <div class="menu__item special">
+            <div class="item__details">
+              <p class="item__name">Cherry Pie</p>
+              <p class="item__description">Made with locally sourced cherries and our signature flaky crust.</p>
+            </div>
+            <p class="item__price">$2.75</p>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">New York Cheesecake</p>
+              <p class="item__description">Creamy, rich cheesecake with a graham cracker crust.</p>
+            </div>
+            <p class="item__price">$3.00</p>
+          </div>
+          
+          <div class="menu__item">
+            <div class="item__details">
+              <p class="item__name">Cinnamon Roll</p>
+              <p class="item__description">Warm, gooey cinnamon roll topped with vanilla frosting.</p>
+            </div>
+            <p class="item__price">$2.50</p>
+          </div>
+        </div>
+        
+        <div class="special__offer">
+          <h3>Weekend Special: Brunch Combo</h3>
+          <p>Any coffee & dessert for just $5.99 every Saturday and Sunday, 9am-11am</p>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
       <footer>
-        <p>
-          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-        </p>
-        <p class="address">123 Free Code Camp Drive</p>
+        <div class="social__links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer__links">
+          <a href="#">About Us</a>
+          <a href="#">Menu</a>
+          <a href="#">Locations</a>
+          <a href="#">Careers</a>
+        </div>
+        <p>© 2025 Artisan Café. All rights reserved.</p>
+        <p class="address">123 Artisan Way, Craftville, CA 94101</p>
       </footer>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>
